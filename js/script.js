@@ -3,7 +3,7 @@ function buttonClicked(argButtonName) {
   console.log(argButtonName + ' został kliknięty');
 }
 
-let computerMove, playerMove, randomNumber, playerInput;
+let playerInput;
 
 
 function getMoveName(argMoveId) {
@@ -38,11 +38,11 @@ function displayResult(argPlayerMove, argComputerMove) {
 }
 
 console.log('wybór ruchu gracza to: ' + playerInput);
-playerMove = argButtonName;
+const playerMove = argButtonName;
 console.log('ruch gracza to: ' + playerMove);
-randomNumber = Math.floor(Math.random() * 3 + 1);
+const randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('wylosowana liczba to: ' + randomNumber);
-computerMove = getMoveName(randomNumber);
+const computerMove = getMoveName(randomNumber);
 console.log('ruch komputera to: ' + computerMove);
 displayResult(playerMove, computerMove);
 
