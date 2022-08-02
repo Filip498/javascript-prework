@@ -3,16 +3,47 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kamień, papier, nożyce</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Signika:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div class="container">
-		<div id="buttons">
-			<button id="button-rock">Kamień</button>
-            <button id="button-paper">Papier</button>
-            <button id="button-scissors">Nożyce</button>
+	<header class="splash">
+        <div class="container">
+            <h1 class="page-title">Gra: Papier - Kamień - Nożyce</h1>
+            <h2 class="page-subtitle">Witamy w jednej z najpopularniejszych gier!</h2>
+        </div>
+    </header>
+	<div class="rules">
+        <div class="container">
+            <h3 class="rules-title">Zasady gry:</h3>
+            <p>Gra składać się może z trzech, ale i większej liczby tur, w zależności od tego, jak długo chcą grać w nią gracze. Na trzy każdy z graczy pokazuje wybrany przez siebie symbol – papier, kamień lub nożyce. Gracz, który pokazał silniejszy symbol, wygrywa i otrzymuje jeden punkt. Jeśli dwóch graczy pokaże ten sam symbol, jest remis i punktu nie dostaje nikt.<br><br>Nie ma najsilniejszego symbolu. Zasada jest taka:<br>
+                - kamień jest silniejszy od nożyc, ponieważ je tępi;<br>
+                - nożyce są silniejsze od papieru, ponieważ go tną;<br>
+                - papier jest silniejszy od kamienia, ponieważ go owija<br><br>
+                Gracz, który pierwszy uzyska umówioną wcześniej ilość punktów, wygrywa partię.<br></p>
+        </div>
+    </div>
+
+	<div class="game">
+		<div class="container">
+			<div class="choice">
+                <p>WYBIERZ:</p>
+            </div>
+			<div id="buttons">
+				<button id="button-rock">Kamień</button>
+            	<button id="button-paper">Papier</button>
+            	<button id="button-scissors">Nożyce</button>
+			</div>
+			<div class="result">
+                <p>WYNIK:</p>
+            </div>
+			<div id="messages"></div>
 		</div>
-		<div id="messages"></div>
 	</div>
 	<script src="js/functions.js"></script>
 	<script src="js/script.js"></script>
