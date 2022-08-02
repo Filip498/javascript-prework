@@ -1,4 +1,4 @@
-var argButtonName, buttonPaper, buttonRock, buttonScissors, buttonTest;
+let argButtonName, buttonPaper, buttonRock, buttonScissors, buttonTest;
 
 
 function buttonClicked(argButtonName) {
@@ -6,7 +6,7 @@ function buttonClicked(argButtonName) {
   console.log(argButtonName + ' został kliknięty');
 }
 
-var argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
+let argMoveId, argPlayerMove, argComputerMove, computerMove, playerMove, randomNumber, playerInput;
 
 
 function getMoveName(argMoveId) {
